@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Timezones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World Clock</h1>
+        <div class="clocks-grid">
+            <div class="clock-card">
+                <div class="timezone-name">New York (EST)</div>
+                <div class="clock-display" id="ny-clock">00:00:00</div>
+                <div class="timezone-offset" id="ny-offset">UTC-5</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">London (GMT)</div>
+                <div class="clock-display" id="london-clock">00:00:00</div>
+                <div class="timezone-offset" id="london-offset">UTC+0</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">Paris (CET)</div>
+                <div class="clock-display" id="paris-clock">00:00:00</div>
+                <div class="timezone-offset" id="paris-offset">UTC+1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">Dubai (GST)</div>
+                <div class="clock-display" id="dubai-clock">00:00:00</div>
+                <div class="timezone-offset" id="dubai-offset">UTC+4</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">Tokyo (JST)</div>
+                <div class="clock-display" id="tokyo-clock">00:00:00</div>
+                <div class="timezone-offset" id="tokyo-offset">UTC+9</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">Sydney (AEDT)</div>
+                <div class="clock-display" id="sydney-clock">00:00:00</div>
+                <div class="timezone-offset" id="sydney-offset">UTC+11</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">Los Angeles (PST)</div>
+                <div class="clock-display" id="la-clock">00:00:00</div>
+                <div class="timezone-offset" id="la-offset">UTC-8</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">Moscow (MSK)</div>
+                <div class="clock-display" id="moscow-clock">00:00:00</div>
+                <div class="timezone-offset" id="moscow-offset">UTC+3</div>
+            </div>
+        </div>
+
+        <div class="local-time">
+            <p>Your Local Time: <span id="local-time">00:00:00</span></p>
+            <p>Timezone: <span id="local-timezone"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
